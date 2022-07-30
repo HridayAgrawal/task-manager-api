@@ -4,7 +4,7 @@ const TaskSchema = new mongoose.Schema({
   //whatever is there in schema
   //only that will be pushed to the database
   name: {
-    type: String,
+    type: String, //validations
     required: [true, "must provide name"],
     trim: true,
     maxlength: [20, "name cannot of more than 20 characters"],
